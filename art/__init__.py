@@ -1,0 +1,1 @@
+from .christmas_ascii_art import print_random_ascii_art
