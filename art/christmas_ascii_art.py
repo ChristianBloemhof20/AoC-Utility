@@ -36,7 +36,7 @@ def __generate_christmas_tree(height):
     return "\n".join(tree + trunk)
 
 def print_random_ascii_art():
-    ascii_art = ['santa_ascii.txt', 'snowman_ascii.txt', 'tree']
+    ascii_art = [os.path.join(os.path.dirname(__file__), 'ascii_art\\santa_ascii.txt'), os.path.join(os.path.dirname(__file__), 'ascii_art\\snowman_ascii.txt'), 'tree']
     art = random.choice(ascii_art)
     if art == 'tree':
         ascii_tree = __generate_christmas_tree(height=8)
